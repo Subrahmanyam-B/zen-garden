@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.body {
+  padding: 10rem;
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+form,
+figure,
+blockquote,
+dl,
+dd,
+hr,
+fieldset,
+input,
+select,
+textarea,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: 'Material Symbols Outlined', sans-serif; */
+  line-height: 1.6;
+  color: #333;
+  background-color: #119da4;
+}
+
+.head-container {
+  /* Background color with alpha for transparency */
+  backdrop-filter: blur(10px); /* Blur the background */
+  border-radius: 1rem; /* Rounded corners for a smoother look */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Border color with alpha for a subtle edge */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12); /* Box shadow for depth */
+  /* Add padding to the container */
+  display: flex;
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  color: #040404;
+
+  background: linear-gradient(
+    134deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.25) 55.21%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  box-shadow: 0px 4px 2rem 0px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0.5rem;
+  z-index: 10;
+}
+
+.head-container h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #040404;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.about {
+  padding: 2rem;
+  font-size: large;
+  color: #040404;
+  padding-bottom: 6rem;
+}
+
+.about h1 {
+  color: #040404;
+  font-size: 4rem;
+}
+
+.about mark {
+  background-color: #333;
+  color: #119da4;
+}
+
+.about p {
+  text-align: center;
+}
+
+.about blockquote {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.award {
+  background-color: #fff;
+  /* padding: 2rem;
+   */
+padding: 5rem;
+  color: #040404;
+}
+
+.award h4 {
+    color: #040404;
+    font-size: 4rem;
+}
+
+.award p {
+    font-size: larger;
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+
+
+
+.award-category,
+.award-price {
+  font-weight: bold;
+}
+
+.apply-button {
+  background-color: #119DA4;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #119DA4;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #119DA4;
+  color: #fff;
+}
+
+#event,
+#videos,
+#form,
+#account_details,
+#images {
+  background-color: #0C7489;
+  padding: 2rem;
+}
+
+#event h4 {
+    font-size: xx-large;
+    color: #fff;
+}
+
+#videos h2 {
+  color: #119DA4;
+}
+
+.video-container1 {
+  margin-top: 2rem;
+  width: 100vw;
+  height: auto;
+}
+
+#form form {
+  margin-top: 2rem;
+}
+
+form div,
+.level {
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+}
+
+#account_details {
+  text-align: center;
+  padding: 2rem;
+}
+
+#account_details span {
+  font-size: 50px;
+  color: #119DA4;
+}
+
+.social-link {
+  color: #119DA4;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+#images {
+  text-align: center;
+  background-color: #040404;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #040404;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  /* position: fixed;
+  bottom: 0; */
+  width: 100%;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.radio-label {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #119DA4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #119DA4;
+}
+#form {
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+  }
+
+  #form form {
+    width: 50rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+
+  .award-container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .award-plan {
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Blur the background */
+    border-radius: 1rem; /* Rounded corners for a smoother look */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border color with alpha for a subtle edge */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12); /* Box shadow for depth */
+    /* Add padding to the container */
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    color: #040404;
+  
+    background: linear-gradient(
+      134deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.25) 55.21%,
+      rgba(255, 255, 255, 0.25) 100%
+    );
+    box-shadow: 0px 4px 2rem 0px rgba(0, 0, 0, 0.15);
+  }
+
+
+  #events {
+    color: #fff !important;
+  }
